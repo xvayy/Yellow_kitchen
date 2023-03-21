@@ -1,0 +1,36 @@
+.instagram {
+  padding: 72px 0;
+  &__wrapper {}
+
+  &__title {
+    @media (max-width: $breakpoint600){
+      font-size: 20px;
+      text-align: center;
+    }
+    margin-bottom: 21px;
+    a {
+      color: #313030
+    }
+    span {
+      color: $greyColor;
+    }
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    @media (max-width: $breakpoint768){
+      gap: 12px;
+    }
+    @media (max-width: $breakpoint600){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    img {
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}

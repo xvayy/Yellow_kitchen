@@ -1,0 +1,214 @@
+.home {
+  padding-top: 95px;
+  padding-bottom: 105px;
+  position: relative;
+  &__wrapper {
+    // position: relative;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint480){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    &:first-child {
+      padding-top: 95px;
+      @media (max-width: $breakpoint992){
+        padding-top: 45px;
+      }
+      @media (max-width: $breakpoint480){
+        margin-bottom: 25px;
+      }
+    }
+    @media (max-width: $breakpoint480){
+      flex: 0 0 100%;
+    }
+  }
+
+  &__title {
+    font-family: $font3;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 88px;
+    color: #3F4255;
+    max-width: 534px;
+    @media (max-width: $breakpoint992){
+        font-size: 50px;
+        line-height: 51px;
+        margin-bottom: 35px;
+        max-width: 490px;
+    }
+    @media (max-width: $breakpoint768){
+      font-size: 40px;
+      line-height: 42px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $breakpoint480){
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 24px;
+    @media (max-width: $breakpoint768){
+      gap: 15px;
+    }
+    @media (max-width: $breakpoint480){
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    padding: 19px 24px;
+    border: 2px solid $yellowColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    max-height: 70px;
+    color: $mainColor;
+    @media (max-width: $breakpoint768){
+      padding: 13px 18px;
+    }
+    span {
+      font-family: $font6;
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+    }
+    
+  }
+
+  &__bottom {
+    position: absolute;
+    min-width: 45vw;
+    bottom: 48px;
+    left: 0;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    @media (max-width: $breakpoint768){
+      padding: 15px;
+      bottom: 30px;
+    }
+    @media (max-width: $breakpoint600){
+      bottom: -15px;
+    }
+    @media (max-width: $breakpoint480){
+      bottom: 0;
+    }
+  }
+
+  &__decoration {}
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: $breakpoint768){
+      gap: 20px;
+    }
+    @media (max-width: $breakpoint600){
+      gap: 10px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @media (max-width: $breakpoint768){
+      gap: 8px;
+    }
+    img {
+      @media (max-width: $breakpoint768){
+        max-width: 40px;
+      }
+      @media (max-width: $breakpoint600){
+        max-width: 30px;
+      }
+    }
+    p {
+      font-family: $font2;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.5px;
+      
+      @media (max-width: $breakpoint992){
+        font-size: 15px;
+      }
+      @media (max-width: $breakpoint768){
+        line-height: 12px;
+        font-size: 12px;
+      }
+      @media (max-width: $breakpoint480){
+        min-width: 140px;
+      }
+    }
+  }
+
+  .icon-text {
+    p {
+     @media (max-width: $breakpoint480){
+      min-width: 70px;
+      } 
+    } 
+  }
+}
+
+.item-img {
+  position: relative;
+    &:before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/home-dec1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 191px;
+    height: 206px;
+    bottom: 50px;
+    left: -115px;
+    @media (max-width: $breakpoint768){
+      width: 100px;
+      height: 106px;
+      bottom: 50px;
+      left: -63px;
+    }
+  }
+  position: relative;
+    &:after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/home-dec2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 181px;
+    height: 104px;
+    bottom: 0px;
+    right: 0px;
+    @media (max-width: $breakpoint768){
+      width: 100px;
+      height: 53px;
+      bottom: -5px;
+      right: 0;
+    }
+  }
+}

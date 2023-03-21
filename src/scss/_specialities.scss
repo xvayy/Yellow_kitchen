@@ -1,0 +1,40 @@
+.specialities {
+  padding: 72px 0px;
+  &__wrapper {}
+
+  &__top {}
+
+  &__title {}
+
+  &__btn {}
+
+  &__content {
+    position: relative;
+  }
+
+  &__slider {}
+}
+
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+  border-radius: 6px;
+  min-height: 136px;
+  img {
+    width: auto;
+  }
+  &__text {
+    margin-top: 16px;
+    font-family: $font2;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #313030;
+  }
+}
