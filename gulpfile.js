@@ -50,6 +50,14 @@ function browserSync(params) {
     })
 }
 
+// Deploy
+let ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 // HTML
 function html() {
     return src(path.src.html)
